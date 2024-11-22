@@ -2,3 +2,10 @@
     padding-inline: 1rem;
     margin-bottom: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding-inline: 0;
+    }
+    
+}

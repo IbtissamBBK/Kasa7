@@ -4,8 +4,9 @@
     padding: 2rem;
     color: black;
     font-weight: 500;
-    gap: 3rem;
+    gap: 2rem;
     font-size:  18px;
+    white-space: nowrap;
 }
 
 .navbar__logo {
