@@ -1,13 +1,17 @@
 .navbar {
     display: flex;
     align-items: center;
-    padding: 0 2rem;
+    padding: 2rem;
     color: black;
-    font-weight: 700;
-    gap: 2rem;
-
+    font-weight: 500;
+    gap: 3rem;
+    font-size:  18px;
 }
 
 .navbar__logo {
     margin-right: auto;
+}
+
+.navbar__logo img {
+    width: 180px;
 }

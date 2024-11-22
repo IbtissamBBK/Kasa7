@@ -1,0 +1,29 @@
+.apartment {
+    background-image: linear-gradient(to top, #b85050, #ff6060);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 32%;
+    display: grid;
+    align-items: end;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .apartment {
+        flex-basis: 100%;
+    }
+}
+
+.appartement__subtitle {
+    width: 40%;
+    margin-inline-start: 1rem;
+    margin-block-end: 1rem;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    
+
+
+}
