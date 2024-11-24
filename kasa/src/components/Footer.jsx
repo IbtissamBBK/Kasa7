@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer__logo">
         <svg
           width="123"
@@ -37,7 +37,7 @@ function Footer() {
       <div className="footer__text">
         <p>© 2020 Kasa. All rights reserved</p>
       </div>
-    </div>
+    </footer>
   );
 }
 

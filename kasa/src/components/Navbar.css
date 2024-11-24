@@ -1,12 +1,23 @@
 .navbar {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    justify-content: space-between;
+    padding: 20px 0;
     color: black;
     font-weight: 500;
     gap: 2rem;
     font-size:  18px;
     white-space: nowrap;
+    margin-inline: 2rem;
+    overflow-x: hidden;
+}
+
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 15px;
 }
 
 .navbar__logo {
@@ -16,3 +27,14 @@
 .navbar__logo img {
     width: 180px;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 28px 0;
+    }
+
+    .navbar__logo img {
+        width: 100px;
+    }    
+}
+

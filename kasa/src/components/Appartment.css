@@ -1,25 +1,26 @@
+
+
+
 .apartment {
-    background-image: linear-gradient(to top, #b85050, #ff6060);
-    border-radius: 12px;
+    background: linear-gradient(to top, #b85050, #ff6060);
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-basis: 32%;
-    display: grid;
+    display: flex;
     align-items: end;
-}
-
-@media screen and (max-width: 768px) {
-    .apartment {
-        flex-basis: 100%;
-    }
-}
-
-.appartement__subtitle {
-    width: 40%;
-    margin-inline-start: 1rem;
-    margin-block-end: 1rem;
+    height: 249px; 
+    padding: 1rem;
     color: white;
+    font-weight: bold;
     font-size: 18px;
+    flex-basis: 22%;
+
+    @media screen and (max-width: 768px) {
+        flex-basis: 90%;
+    }
+  }
+  
+  .appartement__subtitle {
+    width: 40%;
     font-weight: 600;
     line-height: 26px;
-
-}
+  }

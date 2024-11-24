@@ -4,17 +4,20 @@ import "./App.css";
 import Banner from "./components/Banner.jsx";
 import "./components/Banner.css";
 import AppartmentGrid from "./components/AppartmentGrid.jsx";
-import Main from "./components/Main.jsx";
+import "./components/AppartmentGrid.css";
 import Footer from "./components/Footer.jsx";
+import "./components/Footer.css";
+import "./components/Navbar.css";
+import "./components/Main.css";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Navbar />
-      <Main>
+      <main className="main">
         <Banner />
         <AppartmentGrid />
-      </Main>
+      </main>
       <Footer />
     </div>
   );
