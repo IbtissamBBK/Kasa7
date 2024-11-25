@@ -20,6 +20,11 @@
     padding-left: 15px;
 }
 
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
 .navbar__logo {
     margin-right: auto;
 }
