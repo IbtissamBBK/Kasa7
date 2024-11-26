@@ -1,12 +1,12 @@
 import React from "react";
-import "./Appartment.css";
+import "./Appartment.scss";
 import { Link } from "react-router-dom";
 
 function Appartment() {
   return (
     <div className="apartment">
       <Link to="/apartment/:id">
-        <div className="appartement__subtitle">Titre de la location</div>
+        <div className="apartment__subtitle">Titre de la location</div>
       </Link>
     </div>
   );

@@ -1,0 +1,16 @@
+@use "../components/scss/variables" as *;
+
+.footer {
+    background-color: $grid-background-dark;
+    color: $text-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  
+    &__logo {
+      margin-top: 1rem;
+    }
+  }
+  

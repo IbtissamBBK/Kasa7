@@ -1,25 +1,22 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import "./App.scss";
 
-import Navbar from "./components/Navbar.jsx";
-import "./App.css";
-import Footer from "./components/Footer.jsx";
-import "./components/Footer.css";
-import "./components/Navbar.css";
-import Main from "./components/Main.jsx";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
 
 // Pages additionnelles
-import Home from "./pages/Home.jsx";
-import ApartmentDetails from "./pages/ApartmentDetails.jsx";
-import NotFound from "./pages/NotFound.jsx";
-import About from "./pages/About.jsx";
+import Home from "./pages/Home";
+import ApartmentDetails from "./pages/ApartmentDetails";
+import NotFound from "./pages/NotFound";
+import About from "./pages/About";
 
 function App() {
   return (
     <div className="app">
       <Navbar />
       <Main className='main'>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apartment/:id" element={<ApartmentDetails />} />
@@ -27,7 +24,6 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Main>
-      
       <Footer />
     </div>
   );

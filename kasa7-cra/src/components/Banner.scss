@@ -1,10 +1,11 @@
-.banner {
+@use "../components/scss/variables" as *;
 
-  background-image: url("C:\Users\ibtis\Documents\GitHub\KASA\kasa7-cra\public\banner.png");
+.banner {
+  background-image: url('../assets/banner.png');
   background-size: cover;
   background-position: center center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  color: white;
+  color: $text-white;
   position: relative;
   height: 180px;
   overflow: hidden;
@@ -13,24 +14,18 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0px 4px 4px 0px #00000040;
-  
-  @media screen and (max-width:768px){
-      height: 110px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
   }
 
-}
-
-.banner::before {
-  position: absolute;
-  content: "";
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.banner__title {
+  &__title {
     width: 100%;
     font-size: 40px;
     height: auto;
@@ -39,13 +34,12 @@
     z-index: 4;
     text-align: center;
 
-    @media screen and (max-width:768px){
-        font-size: 30px;
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
     }
-}
+  }
 
-@media screen and (max-width: 768px) {
-  .banner {
+  @media screen and (max-width: 768px) {
     height: 110px;
     border-radius: 10px;
   }

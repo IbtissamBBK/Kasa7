@@ -1,0 +1,11 @@
+.main {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 27px;
+  }
+}
