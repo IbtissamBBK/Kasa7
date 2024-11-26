@@ -1,0 +1,27 @@
+.section {
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      cursor: pointer;
+      background-color: #ff6060;
+      color: white;
+      font-weight: bold;
+    }
+  
+    &__toggle {
+      font-size: 1.5rem;
+    }
+  
+    &__content {
+      padding: 1rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+  }
+  

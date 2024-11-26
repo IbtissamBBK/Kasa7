@@ -4,7 +4,7 @@ import "./App.scss";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Main from "./components/Main";
+
 
 // Pages additionnelles
 import Home from "./pages/Home";
@@ -16,17 +16,18 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <Main className='main'>
+      <main className='container'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apartment/:id" element={<ApartmentDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Main>
+      </main>
       <Footer />
     </div>
   );
 }
 
 export default App;
+
