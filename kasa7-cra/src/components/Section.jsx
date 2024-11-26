@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Section.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function Section({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +13,10 @@ function Section({ title, content }) {
         onClick={() => setIsOpen((prev) => !prev)}
       >
         <h2>{title}</h2>
-        <span className="section__toggle">{isOpen ? "▲" : "▼"}</span>
+        <FontAwesomeIcon
+          icon={isOpen ? faChevronDown : faChevronUp}
+          className="section__icon"
+        />
       </div>
       {isOpen && <p className="section__content">{content}</p>}
     </div>

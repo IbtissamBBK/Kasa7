@@ -7,10 +7,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 155px;
+    text-align: center;
+    width: 100%;
+    position: relative;
   
     &__logo {
       margin-top: 1rem;
     }
   }
-  

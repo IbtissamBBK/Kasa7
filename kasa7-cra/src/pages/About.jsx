@@ -7,7 +7,7 @@ function About() {
   return (
     <div>
       <Banner image={imageAbout} />
-      <div className="about__sections">
+      <div className="section__text">
         <Section
           title="Fiabilité"
           content="Les annonces postées sur Kasa garantissent une fiabilité totale. 
