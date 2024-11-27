@@ -2,6 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 
+import data from "./components/data/data.json";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -19,7 +21,7 @@ function App() {
       <main className='container'>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/apartment/:id" element={<ApartmentDetails />} />
+          <Route path="/apartment/:id" element={<ApartmentDetails data={data} />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
