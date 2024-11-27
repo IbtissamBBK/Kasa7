@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 140px;
+    height: 143px;
     text-align: center;
     width: 100%;
     position: absolute;
@@ -17,4 +17,10 @@
     &__logo {
       margin-top: 1rem;
     }
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+      
+    }
   }
+
