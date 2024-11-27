@@ -9,18 +9,18 @@ function About() {
       <Banner image={imageAbout} />
       <div className="about__collapse">
         <Collapse title="Fiabilité">
-          Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-          photos sont conformes aux logements, et toutes les informations sont
+          Les annonces postées sur Kasa garantissent une fiabilité totale. 
+          Les photos sont conformes aux logements, et toutes les informations sont
           régulièrement vérifiées par nos équipes.
         </Collapse>
         <Collapse title="Respect">
-          La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
-          comportement discriminatoire ou de perturbation du voisinage
+          La bienveillance fait partie des valeurs fondatrices de Kasa. 
+          Tout comportement discriminatoire ou de perturbation du voisinage
           entraînera une exclusion de notre plateforme.
         </Collapse>
         <Collapse title="Service">
-          La qualité du service est au cœur de notre engagement chez Kasa. Nous
-          veillons à ce que chaque interaction, que ce soit avec nos hôtes ou
+          La qualité du service est au cœur de notre engagement chez Kasa. 
+          Nous veillons à ce que chaque interaction, que ce soit avec nos hôtes ou
           nos locataires, soit empreinte de respect et de bienveillance.
         </Collapse>
         <Collapse title="Sécurité">

@@ -1,0 +1,32 @@
+@use "../components/scss/variables" as *;
+
+.notfound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 3rem;
+
+    &__title {
+        font-size: 288px;
+        font-weight: 700;
+        color: $color-primary;
+        margin: 50px auto;
+    }
+
+    &__subtitle {
+        font-size: 36px;
+        font-weight: 500;
+        color: $color-primary;
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    &__link {
+        color: $text-black;
+        font-size: 18px;
+        text-decoration: underline;
+        font-weight: 500;
+        margin-top: 100px;
+    }
+}
