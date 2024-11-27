@@ -1,0 +1,43 @@
+.collapse {
+  margin: 2rem 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ff6060;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    user-select: none;
+    transition: background-color 0.3s ease;
+
+  }
+
+  &__title {
+    margin-left: 15px;
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    margin-right: 15px;
+  }
+
+  &__content-wrapper {
+    overflow: hidden; 
+    max-height: 0; 
+    transition: max-height 0.3s ease;
+  }
+
+  &__content {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+}
+
+.about__collapse {
+  margin: 1rem;
+}
