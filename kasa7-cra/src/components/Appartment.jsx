@@ -1,12 +1,13 @@
 import React from "react";
-import "./Appartment.scss";
 import { Link } from "react-router-dom";
+import "./Appartment.scss";
 
-function Appartment() {
+function Appartment({ id, title, cover }) {
   return (
     <div className="apartment">
-      <Link to="/apartment/:id">
-        <div className="apartment__subtitle">Titre de la location</div>
+      <Link to={`/apartment/${id}`}>
+        <img src={cover} alt={title} className="apartment__image" />
+        <div className="apartment__subtitle">{title}</div>
       </Link>
     </div>
   );
