@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom"; // Ajout de Navigate 
 import data from "../data/data.json";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
@@ -8,12 +8,18 @@ function ApartmentDetails() {
   const { id } = useParams();
   const apartment = data.find((item) => item.id === id);
 
+  if (!apartment) {
+    return <Navigate to="/notfound" replace={true} />; // Redirection vers la page NotFound
+  }
+
   return (
     <section>
+      
       {/* Carrousel */}
       <Carrousel pictures={apartment.pictures} />
       <div className="apartment__details">
         <div className="apartment__info">
+          
           {/* Titre */}
           <h1>{apartment.title}</h1>
           <p>{apartment.location}</p>
@@ -31,6 +37,7 @@ function ApartmentDetails() {
         </div>
 
         <div className="apartment__rating-host">
+          
           {/* Host */}
           <section className="apartment__host">
             <div className="host__details">
