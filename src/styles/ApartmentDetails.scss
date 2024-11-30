@@ -1,0 +1,134 @@
+@use "./variables" as *;
+
+.apartment__details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+  
+    /* Titre */
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 500;
+      color: $color-primary;
+  
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem; 
+      }
+    }
+  
+    /* Paragraphe */
+    p {
+      font-size: 1rem;
+      color: $text-black;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+  }
+  
+  /* Tags (boutons ou badges) */
+  .apartment__tags {
+    .tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin: 8px 0;
+  
+      .tag {
+        background-color: $color-primary;
+        color: white;
+        padding: 5px 1rem;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  /* Informations principales */
+  .apartment__info {
+    width: 60%;
+  
+    @media screen and (max-width: 768px) {
+      width: 100%; /* Pleine largeur sur mobile */
+      display: flex;
+      flex-direction: column; /* Empile les éléments */
+    }
+  }
+  
+  /* Section note et hôte */
+  .apartment__rating-host {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column; /* Alignement vertical par défaut */
+    width: 40%;
+  
+    @media screen and (max-width: 768px) {
+      width: 100%; /* Pleine largeur */
+      flex-direction: row-reverse; /* Inverse l'ordre des enfants */
+      justify-content: space-between; /* Équilibre entre les enfants */
+      align-items: center; /* Centrage vertical */
+    }
+  }
+  
+  /* Section de l'hôte */
+  .apartment__host {
+    .host__details {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: right;
+  
+      .host__picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; /* Forme circulaire */
+        object-fit: cover; /* Remplissage de l'image */
+
+
+      }
+  
+      /* Texte de l'hôte */
+      p {
+        font-size: 1rem;
+        color: $color-primary;
+        font-weight: bold;
+        width: 60%;
+      }
+    }
+  }
+  
+  /* Section note */
+  .apartment__rating {
+    .rating {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $color-primary;
+      margin: 1rem 0;
+  
+      @media screen and (max-width: 768px) {
+        font-size: 2rem; /* Taille réduite sur mobile */
+      }
+    }
+  }
+  
+  /* Sections déroulantes */
+  .apartment-details__collapses {
+    display: flex;
+    justify-content: space-between; /* Alignement horizontal */
+  
+    @media screen and (max-width: 768px) {
+      flex-direction: column; /* Mise en colonne sur mobile */
+    }
+  
+    .collapse {
+      width: 48%; /* Largeur par défaut */
+  
+      @media screen and (max-width: 768px) {
+        width: 100%; /* Pleine largeur sur mobile */
+        margin-bottom: 1rem; /* Espace entre les collapses */
+      }
+    }
+  }
+  

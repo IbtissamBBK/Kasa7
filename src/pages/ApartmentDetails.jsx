@@ -3,6 +3,7 @@ import { useParams, Navigate } from "react-router-dom"; // Ajout de Navigate
 import data from "../data/data.json";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
+import "../styles/ApartmentDetails.scss";
 
 function ApartmentDetails() {
   const { id } = useParams();

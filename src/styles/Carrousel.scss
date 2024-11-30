@@ -6,6 +6,10 @@
     height: 400px;
     margin: 10px auto;
     overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+      height: 300px;
+    }
   
     &__image {
         width: 100%;
@@ -24,7 +28,12 @@
       background: none;
       color: $text-white;
       font-size: 80px;
-  
+
+      @media all and (max-width: 768px) {
+        font-size: 30px;
+        
+      }
+
       &--left {
         left: 1rem;
       }
