@@ -1,4 +1,4 @@
-@use "../components/scss/variables" as *;
+@use "./variables" as *;
 
 .apartment {
   position: relative;
@@ -8,10 +8,6 @@
   flex-basis: 28%;
   object-fit: cover;
   
-
-
-
-
   @media screen and (max-width: 768px) {
     flex-basis: 90%;
   }

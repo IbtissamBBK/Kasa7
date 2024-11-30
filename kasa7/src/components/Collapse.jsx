@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react"; // Import des hooks React pour l'état et les références
-import "./Collapse.scss"; 
+import "../styles/Collapse.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons"; 
 

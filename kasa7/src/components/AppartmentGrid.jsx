@@ -1,5 +1,5 @@
 import React from "react";
-import "./AppartmentGrid.scss";
+import "../styles/AppartmentGrid.scss";
 import Appartment from "./Appartment.jsx";
 import data from "../data/data.json";
 

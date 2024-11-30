@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Appartment.scss";
+import "../styles/Appartment.scss";
 
 function Appartment({ id, title, cover }) {
   return (
