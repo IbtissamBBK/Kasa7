@@ -1,15 +1,15 @@
-import React, { useState, useRef } from "react"; // Import des hooks React pour l'état et les références
+import React, { useState, useRef } from "react"; // Import des hooks React 
 import "../styles/Collapse.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons"; 
 
 function Collapse({ title, children }) {
-  const [isOpen, setIsOpen] = useState(false); // État pour savoir si la section est ouverte ou fermée
-  const contentRef = useRef(null); // Référence au contenu pour mesurer sa hauteur
+  const [isOpen, setIsOpen] = useState(false); // si la section est ouverte ou fermée
+  const contentRef = useRef(null); 
 
   return (
-    <div className="collapse"> {/* Conteneur principal */}
-      {/* En-tête cliquable avec le titre et l'icône */}
+    <div className="collapse"> {/* Conteneur */}
+      
       <div
         className="collapse__header"
         onClick={() => setIsOpen((prev) => !prev)} // Toggle l'état ouvert/fermé au clic

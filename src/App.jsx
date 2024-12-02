@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; // Gestion des routes pour la navigation dans l'application
 import "./styles/App.scss";
 
 // Components
@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 
 
-// Pages additionnelles
+// Pages
 import Home from "./pages/Home";
 import ApartmentDetails from "./pages/ApartmentDetails";
 import NotFound from "./pages/NotFound";
