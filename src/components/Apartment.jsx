@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/Appartment.scss";
+import "../styles/_apartment.scss";
 
-function Appartment({ id, title, cover }) {
+function Apartment({ id, title, cover }) {
   return (
     <div className="apartment">
       <Link to={`/apartment/${id}`}>
@@ -13,4 +13,4 @@ function Appartment({ id, title, cover }) {
   );
 }
 
-export default Appartment;
+export default Apartment;

@@ -3,7 +3,7 @@ import { useParams, Navigate } from "react-router-dom"; // Paramètres de l'URL 
 import data from "../data/data.json"; 
 import Carrousel from "../components/Carrousel"; // Composant pour afficher un carrousel d'images
 import Collapse from "../components/Collapse"; // Composant pour afficher des sections repliables
-import "../styles/ApartmentDetails.scss"; 
+import "../styles/_apartmentDetails.scss"; 
 
 function ApartmentDetails() {
   const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL (paramètre :id) 

@@ -1,5 +1,5 @@
 import React, { useState } from "react"; // Importation de React et du hook useState
-import "../styles/Carrousel.scss";
+import "../styles/_carrousel.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Icones pour les flèches
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"; // Import des icônes de navigation
 

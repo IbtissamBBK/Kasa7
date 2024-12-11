@@ -1,5 +1,5 @@
-@use "./variables" as *;
-
+@use "./base/variables" as *;
+@use "./base/mixins" as *;
 .banner {
 
   background-size: cover;
@@ -35,15 +35,15 @@
     z-index: 4;
     text-align: center;
 
-    @media screen and (max-width: 768px) {
+    @include respond-to(mobile) {
       font-size: 30px;
       text-align: left;
       margin-left: 2rem;
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @include respond-to(mobile) {
     height: 110px;
-    border-radius: 10px;
+    @include rounded;
   }
 }

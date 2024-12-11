@@ -1,4 +1,5 @@
-@use "./variables" as *;
+@use "./base/variables" as *;
+@use "./base/mixins" as *;
 
 .navbar {
     display: flex;
@@ -7,7 +8,7 @@
     padding: 20px 0;
     color: $text-black;
     font-weight: 500;
-    font-size: 18px;
+    font-size: $font-size-large;
     white-space: nowrap;
     max-width: 1200px;
     overflow-x: hidden;
@@ -18,7 +19,7 @@
     }
   
     a {
-      font-size: 16px;
+      font-size: $font-size-base;
       text-decoration: none;
       color: inherit;
       padding-inline: 15px;       
@@ -38,7 +39,7 @@
     }
   }
   
-  @media screen and (max-width: 768px) {
+  @include respond-to(mobile) {
     .navbar {
       padding: 28px 0;
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom"; // Gestion des routes pour la navigation dans l'application
-import "./styles/App.scss";
+import "./styles/_app.scss";
 
 // Components
 import Navbar from "./components/Navbar";

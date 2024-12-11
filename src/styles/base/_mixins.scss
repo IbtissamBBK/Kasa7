@@ -1,0 +1,15 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint ==mobile {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+}
+
+@mixin rounded($radius: 10px) {
+    border-radius: $radius;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+    transition: $property $duration $timing;
+}

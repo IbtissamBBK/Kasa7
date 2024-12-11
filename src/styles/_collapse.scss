@@ -1,3 +1,6 @@
+@use "./base/variables" as *;
+@use "./base/mixins" as *;
+
 .collapse {
   margin: 2rem 0;
 
@@ -6,10 +9,10 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    background-color: #ff6060;
-    color: white;
+    background-color: $color-primary;
+    color: $text-white;
     font-weight: bold;
-    border-radius: 10px;
+    @include rounded;
     user-select: none;
     transition: background-color 0.3s ease;
     height: 3.5rem;
@@ -21,7 +24,7 @@
   }
 
   &__icon {
-    font-size: 1.5rem;
+    font-size: $font-size-subtitle;
     transition: transform 0.3s ease;
     margin-right: 15px;
   }
@@ -34,8 +37,8 @@
 
   &__content {
     padding: 1rem;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: $collapse-background;
+    color: $text-black;
   }
 }
 
