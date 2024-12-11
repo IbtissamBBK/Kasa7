@@ -22,6 +22,7 @@ function Carrousel({ pictures }) {
 
     return (
         <div className="Carrousel">
+                        
             {/* Affiche les flèches de navigation uniquement s'il y a plusieurs images */}
             {pictures.length > 1 && (
                 <>
@@ -48,7 +49,13 @@ function Carrousel({ pictures }) {
                 src={pictures[currentIndex]} // URL de l'image courante
                 alt={`Slide ${currentIndex + 1}`} // Texte alternatif pour l'accessibilité
                 className="Carrousel__image"
+                
             />
+            
+            <div className="Carrousel__counter">
+                {currentIndex + 1} / {pictures.length}
+            </div>
+            
         </div>
     );
 }
