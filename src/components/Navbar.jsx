@@ -11,8 +11,8 @@ function Navbar() {
         <img src={logo} alt="logo" />
       </div>
       </NavLink>
-      <NavLink to="/">ACCUEIL</NavLink>
-      <NavLink to="/about">A PROPOS</NavLink>
+      <NavLink to="/">Accueil</NavLink>
+      <NavLink to="/about">A Propos</NavLink>
     </nav>
   );
 }
