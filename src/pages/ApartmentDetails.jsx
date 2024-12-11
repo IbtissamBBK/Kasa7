@@ -6,8 +6,8 @@ import Collapse from "../components/Collapse"; // Composant pour afficher des se
 import "../styles/ApartmentDetails.scss"; 
 
 function ApartmentDetails() {
-  const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
-  const apartment = data.find((item) => item.id === id); // Recherche l'appartement correspondant dans les données
+  const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL (paramètre :id) 
+  const apartment = data.find((item) => item.id === id); // Recherche l'appartement correspondant dans les données json  
 
   // Redirection si incorrect
   if (!apartment) {
@@ -17,7 +17,7 @@ function ApartmentDetails() {
   return (
     <section>
       {/* Carrousel */}
-      <Carrousel pictures={apartment.pictures} />
+      <Carrousel pictures={apartment.pictures} /> {/* Affiche les images de l'appartement */}
 
       <div className="apartment__details">
         <div className="apartment__info">
@@ -28,8 +28,8 @@ function ApartmentDetails() {
           {/* Affichage des tags à l'appartement */}
           <section className="apartment__tags">
             <div className="tags">
-              {apartment.tags.map((tag, index) => (
-                <span key={index} className="tag">
+              {apartment.tags.map((tag, index) => ( // Affiche les tags de l'appartement 
+                <span key={index} className="tag"> 
                   {tag}
                 </span>
               ))}
@@ -43,8 +43,8 @@ function ApartmentDetails() {
             <div className="host__details">
               <p>{apartment.host.name}</p>
               <img
-                src={apartment.host.picture}
-                alt={`Hôte: ${apartment.host.name}`}
+                src={apartment.host.picture} 
+                alt={`Hôte: ${apartment.host.name}`} 
                 className="host__picture"
               />
             </div>
@@ -54,21 +54,21 @@ function ApartmentDetails() {
           <section className="apartment__rating">
             <div className="rating">
               {"★".repeat(Number(apartment.rating))} {/* Étoiles pleines */}
-              {"☆".repeat(5 - Number(apartment.rating))} {/* Étoiles vides */}
+              {"☆".repeat(5 - Number(apartment.rating))} {/* Étoiles vides */} 
             </div>
           </section>
         </div>
       </div>
 
       {/* Description et équipements) */}
-      <div className="apartment-details__collapses">
-        <Collapse title="Description">
+      <div className="apartment-details__collapses"> 
+        <Collapse title="Description"> 
           <p>{apartment.description}</p>
         </Collapse>
-        <Collapse title="Équipements">
+        <Collapse title="Équipements"> 
           <ul>
-            {apartment.equipments.map((equipment, index) => (
-              <li key={index}>{equipment}</li>
+            {apartment.equipments.map((equipment, index) => ( // Affiche les équipements de l'appartement
+              <li key={index}>{equipment}</li> 
             ))}
           </ul>
         </Collapse>

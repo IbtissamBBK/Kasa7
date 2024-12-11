@@ -6,7 +6,7 @@ import bannerImg from "../assets/banner.png";
 function Home() {
   return (
     <div>
-      <Banner image={bannerImg} text="Chez vous, partout et ailleurs" />
+      <Banner image={bannerImg} text="Chez vous, partout et ailleurs" /> 
       <AppartmentGrid />
     </div>
   );

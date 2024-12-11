@@ -8,7 +8,7 @@ function Banner({ image, text }) {
     <div
       className="banner"
       style={{
-        backgroundImage: `url(${image})`, // La prop 'image' est utilisée ici pour définir le chemin de l'image
+        backgroundImage: `url(${image})`, // La prop 'image' est utilisée ici pour définir le chemin de l'image 
         
       }}
     >
